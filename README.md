@@ -1,6 +1,6 @@
 # LineageOS ROM Build Script
 
-Automated build script for LineageOS with multi-device support via JSON configurations.
+Automated build script for LineageOS
 
 ## 🚀 Quick Start
 
