@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 ROM_NAME="LineageOS"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BUILD_DIR="$HOME/lineage"
-MANIFEST_URL="https://github.com/LineageOS/android.git"
+MANIFEST_URL="https://github.com/SM8250-Common/android.git"
 MANIFEST_BRANCH="lineage-23.0"
 SYNC_JOBS="24"
 
