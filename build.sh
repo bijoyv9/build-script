@@ -79,6 +79,9 @@ load_device_config() {
         BUILD_VARIANT=$(jq -r '.build.variant // "userdebug"' "$config_file")
     fi
 
+    # Load AOSP target release (e.g., bp2a for Android 16, bp1a for Android 15)
+    AOSP_TARGET_RELEASE=$(jq -r '.build.aosp_target_release // ""' "$config_file")
+
     print_success "Device configuration loaded: $DEVICE ($DEVICE_FULL_NAME)"
 }
 
@@ -220,7 +223,11 @@ build_rom() {
     
     # Setup device configuration
     print_status "Setting up device configuration..."
-    lunch "lineage_${DEVICE}-${BUILD_VARIANT}"
+    if [ -n "$AOSP_TARGET_RELEASE" ]; then
+        lunch "lineage_${DEVICE}-${AOSP_TARGET_RELEASE}-${BUILD_VARIANT}"
+    else
+        lunch "lineage_${DEVICE}-${BUILD_VARIANT}"
+    fi
     
     if [ $? -ne 0 ]; then
         print_error "Failed to setup device configuration"
@@ -393,6 +400,7 @@ main() {
     echo "  Manifest Branch: $MANIFEST_BRANCH"
     echo "  Sync Jobs: $SYNC_JOBS"
     echo "  Build Variant: $BUILD_VARIANT"
+    echo "  AOSP Target Release: ${AOSP_TARGET_RELEASE:-none}"
     echo "  Skip Sync: $SKIP_SYNC"
     echo "  Clean First: $CLEAN_FIRST"
     echo "  Clean Repos: $CLEAN_REPOS"

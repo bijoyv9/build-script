@@ -55,6 +55,7 @@
   "build": {
     "variant": "userdebug",
     "gms_variant": "vanilla",
-    "build_type": "-b"
+    "build_type": "-b",
+    "aosp_target_release": "bp2a"
   }
 }
