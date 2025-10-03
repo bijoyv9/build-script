@@ -1,0 +1,60 @@
+{
+  "device": {
+    "codename": "spartan",
+    "full_name": "Realme GT Neo 3T",
+    "manufacturer": "realme",
+    "common_platform": "sm8250-common"
+  },
+  "repositories": {
+    "device_tree": {
+      "url": "https://github.com/SM8250-Common/android_device_realme_spartan.git",
+      "branch": "lineage-23.0",
+      "path": "device/realme/spartan"
+    },
+    "device_common_tree": {
+      "url": "https://github.com/SM8250-Common/android_device_realme_sm8250-common.git",
+      "branch": "lineage-23.0",
+      "path": "device/realme/sm8250-common"
+    },
+    "vendor_tree": {
+      "url": "https://github.com/SM8250-Common/proprietary_vendor_realme_spartan.git",
+      "branch": "lineage-23.0",
+      "path": "vendor/realme/spartan"
+    },
+    "vendor_common_tree": {
+      "url": "https://github.com/SM8250-Common/proprietary_vendor_realme_sm8250-common.git",
+      "branch": "lineage-23.0",
+      "path": "vendor/realme/sm8250-common"
+    },
+    "hardware_oplus": {
+      "url": "https://github.com/SM8250-Common/android_hardware_oplus.git",
+      "branch": "lineage-23.0",
+      "path": "hardware/oplus"
+    },
+    "kernel_tree": {
+      "url": "https://github.com/bijoyv9/android_kernel_realme_sm8250.git",
+      "branch": "phoeniX-AOSP",
+      "path": "kernel/realme/sm8250"
+    },
+    "camera_tree": {
+      "url": "https://gitlab.com/ryukftw/proprietary_vendor_oplus_camera.git",
+      "branch": "lineage-23.0",
+      "path": "vendor/oplus/camera"
+    },
+    "hardware_dolby": {
+      "url": "https://github.com/SM8250-Common/hardware_dolby.git",
+      "branch": "16",
+      "path": "hardware/dolby"
+    },
+    "signing_keys": {
+      "url": "https://github.com/AeonOS-AOSP/vendor_lineage-priv.git",
+      "branch": "master",
+      "path": "vendor/lineage-priv"
+    }
+  },
+  "build": {
+    "variant": "userdebug",
+    "gms_variant": "vanilla",
+    "build_type": "-b"
+  }
+}
