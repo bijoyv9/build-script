@@ -8,27 +8,27 @@
   "repositories": {
     "device_tree": {
       "url": "https://github.com/SM8250-Common/android_device_realme_bitra.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "device/realme/bitra"
     },
     "device_common_tree": {
       "url": "https://github.com/SM8250-Common/android_device_realme_sm8250-common.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "device/realme/sm8250-common"
     },
     "vendor_tree": {
       "url": "https://github.com/SM8250-Common/proprietary_vendor_realme_bitra.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "vendor/realme/bitra"
     },
     "vendor_common_tree": {
       "url": "https://github.com/SM8250-Common/proprietary_vendor_realme_sm8250-common.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "vendor/realme/sm8250-common"
     },
     "hardware_oplus": {
       "url": "https://github.com/SM8250-Common/android_hardware_oplus.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "hardware/oplus"
     },
     "kernel_tree": {
@@ -38,7 +38,7 @@
     },
     "camera_tree": {
       "url": "https://gitlab.com/ryukftw/proprietary_vendor_oplus_camera.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "vendor/oplus/camera"
     },
     "hardware_dolby": {

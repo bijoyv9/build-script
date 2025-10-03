@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Universal build script for LineageOS
+# Universal build script for crDroid
 # Author: bijoyv9
 
 set -e  # Exit on any error
@@ -13,11 +13,11 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-ROM_NAME="LineageOS"
+ROM_NAME="crDroid"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BUILD_DIR="$HOME/lineage"
-MANIFEST_URL="https://github.com/SM8250-Common/android.git"
-MANIFEST_BRANCH="lineage-23.0"
+BUILD_DIR="$HOME/crdroid"
+MANIFEST_URL="https://github.com/crdroidandroid/android.git"
+MANIFEST_BRANCH="16.0"
 SYNC_JOBS="24"
 
 # Device configuration file (will be loaded from JSON)
@@ -252,7 +252,7 @@ build_rom() {
         print_success "ROM build completed successfully!"
 
         # Find the output file
-        OUTPUT_FILE=$(find "$BUILD_DIR/out/target/product/$DEVICE" -maxdepth 1 -name "lineage-*.zip" | head -1)
+        OUTPUT_FILE=$(find "$BUILD_DIR/out/target/product/$DEVICE" -maxdepth 1 -name "crDroid-*.zip" | head -1)
         if [ -n "$OUTPUT_FILE" ]; then
             print_success "ROM file created: $OUTPUT_FILE"
             ls -lh "$OUTPUT_FILE"

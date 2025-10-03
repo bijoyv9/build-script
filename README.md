@@ -1,11 +1,11 @@
-# LineageOS ROM Build Script
+# crDroid ROM Build Script
 
-Automated build script for LineageOS
+Automated build script for crDroid
 
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/bijoyv9/build-script.git -b lineage-23.0 build-lineage && cd build-lineage && chmod +x build.sh
+git clone https://github.com/bijoyv9/build-script.git -b 16.0 build-crdroid && cd build-crdroid && chmod +x build.sh
 ./build.sh --device <device_name>
 ```
 

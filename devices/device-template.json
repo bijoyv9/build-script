@@ -8,40 +8,40 @@
   "repositories": {
     "device_tree": {
       "url": "https://github.com/your-org/android_device_manufacturer_codename.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "device/manufacturer/codename"
     },
     "device_common_tree": {
       "url": "https://github.com/your-org/android_device_manufacturer_common.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "device/manufacturer/common",
       "optional": true
     },
     "vendor_tree": {
       "url": "https://github.com/your-org/proprietary_vendor_manufacturer_codename.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "vendor/manufacturer/codename"
     },
     "vendor_common_tree": {
       "url": "https://github.com/your-org/proprietary_vendor_manufacturer_common.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "vendor/manufacturer/common",
       "optional": true
     },
     "hardware_oplus": {
       "url": "https://github.com/your-org/android_hardware_oplus.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "hardware/oplus",
       "optional": true
     },
     "kernel_tree": {
       "url": "https://github.com/your-org/android_kernel_manufacturer_platform.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "kernel/manufacturer/platform"
     },
     "camera_tree": {
       "url": "https://gitlab.com/your-org/proprietary_vendor_camera.git",
-      "branch": "lineage-23.0",
+      "branch": "16.0",
       "path": "vendor/camera",
       "optional": true
     },
