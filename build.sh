@@ -212,11 +212,31 @@ clone_device_repos() {
     print_success "All device repositories cloned successfully"
 }
 
+# Function to clean build environment variables
+clean_build_env() {
+    print_status "Cleaning build environment variables..."
+
+    # Unset common GMS/build flags that might interfere
+    unset WITH_GMS
+    unset WITHOUT_RESERVED_SIZE
+    unset WITH_GMS_COMMS_SUITE
+    unset GMS_MAKEFILE
+
+    # Optional: unset other common flags
+    unset BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE
+    unset BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE
+
+    print_success "Build environment cleaned"
+}
+
 # Function to setup build environment and start compilation
 build_rom() {
     print_status "Setting up build environment and starting compilation..."
     cd "$BUILD_DIR"
-    
+
+    # Clean environment first
+    clean_build_env
+
     # Source build environment
     print_status "Sourcing build environment..."
     source build/envsetup.sh
