@@ -2,8 +2,7 @@
   "device": {
     "codename": "spartan",
     "full_name": "Realme GT Neo 3T",
-    "manufacturer": "realme",
-    "common_platform": "sm8250-common"
+    "manufacturer": "realme"
   },
   "repositories": {
     "device_tree": {
@@ -54,7 +53,6 @@
   },
   "build": {
     "variant": "userdebug",
-    "gms_variant": "vanilla",
     "build_type": "-b",
     "aosp_target_release": "bp2a"
   }
